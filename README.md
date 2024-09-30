@@ -13,18 +13,14 @@ curl -L https://go.dev/dl/go1.21.6.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile
 source .bash_profile
 ```
-Node Name
 
-Your Node Name
-Port prefix
-
-266
-# Download binary
+**Download binary**
+```
 cd $HOME && mkdir -p go/bin/
 wget https://github.com/airchains-network/junction/releases/download/v0.1.0/junctiond
 chmod +x junctiond
 mv junctiond $HOME/go/bin/
-
+```
 
 # Set node CLI configuration
 junctiond config set client chain-id junction
