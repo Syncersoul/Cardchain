@@ -22,10 +22,12 @@ chmod +x junctiond
 mv junctiond $HOME/go/bin/
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 junctiond config set client chain-id junction
 junctiond config set client keyring-backend test
 junctiond config set client node tcp://localhost:26657
+```
 
 # Initialize the node
 junctiond init "Your Node Name" --chain-id junction
