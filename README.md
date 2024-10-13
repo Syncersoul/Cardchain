@@ -59,8 +59,10 @@ sed -i \
   $HOME/.junction/config/app.toml
 ```
 
- **Download latest chain data snapshot**
+**Download latest chain data snapshot**
+```
 curl "https://snapshots-testnet.nodejumper.io/airchains-testnet/airchains-testnet_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.junction"
+```
 
 **Create a service**
 ```
